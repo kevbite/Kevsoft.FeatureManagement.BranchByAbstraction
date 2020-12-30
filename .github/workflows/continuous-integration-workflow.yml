@@ -1,0 +1,26 @@
+name: Continuous Integration Workflow
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      VERSION: 0.0.${{ github.run_number }}-preview
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 5.0.1
+    - name: Restore dependencies
+      run: dotnet restore --configuration Release
+    - name: Build
+      run: dotnet build --configuration Release -p:Version=${{ env.VERSION }} --no-restore
+    - name: Pack
+      run: dotnet pack --configuration Release -p:Version=${{ env.VERSION }} --no-build --verbosity normal
+    - name: Test
+      run: dotnet test --configuration Release --no-build --verbosity normal
+    - name: NuGet.Org push
+      if: github.ref == 'refs/heads/master'
+      run: dotnet nuget push ./src/Kevsoft.FeatureManagement.BranchByAbstraction/bin/Release/*.nupkg --source NuGet.org --api-key ${{ secrets.NUGET_API_KEY }}
