@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <LangVersion>9</LangVersion>
+        <Nullable>enable</Nullable>
+        <Title>Kevsoft.FeatureManagement.BranchByAbstraction</Title>
+        <Authors>Kevin Smith</Authors>
+        <PackageProjectUrl>https://github.com/kevbite/Kevsoft.FeatureManagement.BranchByAbstraction</PackageProjectUrl>
+        <PackageLicenseUrl>https://github.com/kevbite/Kevsoft.FeatureManagement.BranchByAbstraction/blob/master/LICENSE</PackageLicenseUrl>
+        <RepositoryUrl>https://github.com/kevbite/Kevsoft.FeatureManagement.BranchByAbstraction.git</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <PackageTags>FeatureManagement,FeatureFlags,BranchByAbstraction</PackageTags>
+    </PropertyGroup>
+    
+    <PropertyGroup>
+        <IncludeSymbols>true</IncludeSymbols>
+        <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    </PropertyGroup>
+    
+    <ItemGroup>
+        <PackageReference Include="Microsoft.FeatureManagement" Version="2.2.0" />
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="5.0.0" />
+    </ItemGroup>
+
+</Project>

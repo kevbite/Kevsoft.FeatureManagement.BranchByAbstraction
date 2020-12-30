@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kevsoft.FeatureManagement.BranchByAbstraction", "src\Kevsoft.FeatureManagement.BranchByAbstraction\Kevsoft.FeatureManagement.BranchByAbstraction.csproj", "{5C64FCBD-1D3E-4263-844E-01376FC2B1C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kevsoft.FeatureManagement.BranchByAbstraction.Tests", "test\Kevsoft.FeatureManagement.BranchByAbstraction.Tests\Kevsoft.FeatureManagement.BranchByAbstraction.Tests.csproj", "{46590B52-1719-4559-8CA0-8952DFCFC6A2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5C64FCBD-1D3E-4263-844E-01376FC2B1C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C64FCBD-1D3E-4263-844E-01376FC2B1C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C64FCBD-1D3E-4263-844E-01376FC2B1C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C64FCBD-1D3E-4263-844E-01376FC2B1C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46590B52-1719-4559-8CA0-8952DFCFC6A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46590B52-1719-4559-8CA0-8952DFCFC6A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46590B52-1719-4559-8CA0-8952DFCFC6A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46590B52-1719-4559-8CA0-8952DFCFC6A2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
